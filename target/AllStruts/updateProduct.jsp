@@ -56,7 +56,7 @@
         </div>
     </table>
     
-    <h1>Update Book</h1>
+    <h1>Update Product</h1>
     
     <form action="updateProduct" method="post">
 <label for="id">Product ID:</label>
