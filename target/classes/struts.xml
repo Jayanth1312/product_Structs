@@ -1,0 +1,25 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="addProduct" class="com.example.addProduct"
+			method="post">
+			<result name="success">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="updateProduct"
+				class="com.example.updateProduct" method="post">
+			<result name="success">/displayBooks.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="deleteProduct"
+				class="com.example.deleteProduct" method="post">
+			<result name="success">/displayBooks.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+	</package>
+</struts>
