@@ -25,11 +25,11 @@ public class deleteProduct extends ActionSupport {
 			tx = session.beginTransaction();
 
 			// Load the existing book from the database using ID
-			Product existingBook = session.get(Product.class, id);
+			Product existingProduct = session.get(Product.class, id);
 
-			if (existingBook != null) {
+			if (existingProduct != null) {
 				// Delete the book
-				session.remove(existingBook);
+				session.remove(existingProduct);
 
 				tx.commit();
 				addActionMessage("Product deleted successfully!");

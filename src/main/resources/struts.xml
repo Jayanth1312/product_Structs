@@ -12,12 +12,12 @@
 
 		<action name="updateProduct"
 				class="com.example.updateProduct" method="post">
-			<result name="success">/displayBooks.jsp</result>
+			<result name="success">/displayProduct.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		<action name="deleteProduct"
 				class="com.example.deleteProduct" method="post">
-			<result name="success">/displayBooks.jsp</result>
+			<result name="success">/displayProduct.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 

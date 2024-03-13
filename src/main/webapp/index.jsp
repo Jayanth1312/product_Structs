@@ -6,34 +6,34 @@
     <meta charset="UTF-8">
     <title>Library Management</title>
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
         }
         h1 {
-            color: #333;
             text-align: center;
-            padding: 20px 0;
-            background-color: #007bff;
-            color: #fff;
-            margin: 0;
+            color: #333;
         }
         .operation-links {
             text-align: center;
-            margin-top: 20px;
+            width: 50%;
+            margin: 50px 270px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .operation-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            padding: 10px 20px;
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 15px;
             background-color: #007bff;
-            color: #fff;
-            border: 1px solid #0056b3;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
         .operation-links a:hover {
             background-color: #0056b3;

@@ -11,60 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Delete Product</title>
-<style>
-/* Add your CSS styles here */
-body {
-	font-family: Arial, sans-serif;
-}
-
-h1 {
-	color: #333;
-}
-
-form {
-	width: 50%;
-	margin: 20px auto;
-}
-
-label {
-	display: block;
-	margin-bottom: 5px;
-}
-
-input {
-	width: 100%;
-	padding: 8px;
-	margin-bottom: 10px;
-}
-
-button {
-	padding: 10px;
-	background-color: #d9534f;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: #c9302c;
-}
-
-table {
-	width: 80%;
-	margin: 20px auto;
-	border-collapse: collapse;
-}
-
-th, td {
-	border: 1px solid #ccc;
-	padding: 8px;
-	text-align: left;
-}
-
-th {
-	background-color: #f2f2f2;
-}
+<link rel="stylesheet" href="global.css">
 </style>
 </head>
 <body>
@@ -92,7 +39,7 @@ th {
         %>
 		<tr>
 			<td><%= product.getId() %></td>
-			<td><%= product.getName() %></td>
+			<td><%= product.getProductName() %></td>
 			<td><%= product.getDescription() %></td>
 			<td><%= product.getPrice() %></td>
 			<td><%= product.getCategory() %></td>

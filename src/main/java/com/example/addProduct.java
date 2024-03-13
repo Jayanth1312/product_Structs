@@ -4,7 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.example.Product;
 
 public class addProduct extends ActionSupport {
     private Product product = new Product();
@@ -33,11 +32,11 @@ public class addProduct extends ActionSupport {
         }
     }
 
-    public Product getName() {
+    public Product getProduct() {
         return product;
     }
 
-    public void setName(Product product) {
+    public void setProduct(Product product) {
         this.product = product;
     }
 }

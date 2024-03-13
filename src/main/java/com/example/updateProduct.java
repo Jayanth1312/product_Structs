@@ -22,7 +22,7 @@ public class updateProduct extends ActionSupport {
 			if (existingProduct != null) {
 				// Update the book details
 				existingProduct.setId(id);
-				existingProduct.setName(product.getName());
+				existingProduct.setProductName(product.getProductName());
 				existingProduct.setDescription(product.getDescription());
 				existingProduct.setCategory(product.getCategory());
 				existingProduct.setStock(product.getStock());
@@ -56,12 +56,11 @@ public class updateProduct extends ActionSupport {
 		this.id = id;
 	}
 
-	public Product getBook() {
+	public Product getProduct() {
 		return product;
 	}
 
-	public void setBook(Product book) {
+	public void setProduct(Product product) {
 		this.product = product;
 	}
-
 }

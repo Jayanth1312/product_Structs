@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.List" %>
-<%@ page import="org.hibernate.SessionFactory" %>
 <%@ page import="org.hibernate.Session" %>
 <%@ page import="com.example.Product" %>
 <%@ page import="com.example.FactoryProvider" %>
@@ -9,40 +8,18 @@
 <head>
     <meta charset="UTF-8">
     <title>List Books</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
-    <h1>List of Books</h1>
-    
+    <h1>List of Products</h1>
     <table>
         <tr>
         	<th>Id</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN</th>
-            <th>Genre</th>
-            <th>Copies Available</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Stock Available</th>
         </tr>
         
         <% 
@@ -57,7 +34,7 @@
         %>
                 <tr>
                 	<td><%= product.getId() %></td>
-                    <td><%= product.getName() %></td>
+                    <td><%= product.getProductName() %></td>
                     <td><%= product.getDescription() %></td>
                     <td><%= product.getPrice() %></td>
                     <td><%= product.getCategory() %></td>

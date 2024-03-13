@@ -8,14 +8,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "books")
+@Table(name = "products")
 public class Product {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-	@Column(name = "product_name")
-	private String product_name;
+	@Column(name = "productName")
+	private String productName;
 	@Column(name = "description")
 	private String description;
 	@Column(name = "price")
@@ -25,12 +25,12 @@ public class Product {
 	@Column(name = "stock")
 	private int stock;
 
-	public String getName() {
-		return product_name;
+	public String getProductName() {
+		return productName;
 	}
 
-	public void setName(String product_name) {
-		this.product_name = product_name;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getDescription() {
@@ -76,7 +76,7 @@ public class Product {
 	public Product(int id, String product_name, String description, float price, String category, int stock) {
 		super();
 		this.id=id;
-		this.product_name = product_name;
+		this.productName = product_name;
 		this.description = description;
 		this.price = price;
 		this.category = category;
